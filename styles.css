@@ -1,0 +1,81 @@
+* {
+    font-family: 'Poppins';
+  }
+  
+  /* Navigation Bar */
+.navigation-link {
+  color: #ffffff;
+}
+
+.navigation-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul li a {
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo:hover {
+  transition: color 0.3s ease-in-out;
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* About */
+.about {
+  font-size: 17px;
+}
+
+ /* Button */
+.buy-btn {
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.buy-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
+
+.buy-btn:active {
+  background-color: #cc5200;
+  transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+}
+
+footer ul li a {
+  transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #f1c40f;
+}
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirCold</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="bg-green-500 shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="index.html" class="logo">AirCold</a>
+            <ul class="flex space-x-10 text-black">
+            <li><a href="index.html" class="navigation-link">Home</a></li>
+            <li><a href="store.html" class="navigation-link">Store</a></li>
+            <li><a href="contact.html" class="navigation-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Window Type Aircon -->
+  <section class="py-20 mt-6 bg-green-500">
+    <div class="container mx-auto">
+      <h2 class="text-8xl font-bold text-center text-white">Window Type Aircon</h2>
+
+      <!-- Sort option -->
+      <div class="text-center mt-6 flex items-center justify-center space-x-3">
+        <label for="sortOptions" class="text-lg font-semibold text-white">Sort by Price:</label>
+        <select id="sortOptions" class="bg-white text-black font-bold py-2 px-6 rounded-md shadow-md hover:bg-gray-200 transition">
+          <option value="">Default</option>
+          <option value="low-to-high">Low to High</option>
+          <option value="high-to-low">High to Low</option>
+        </select>
+      </div>
+  
+      <!-- Product Grid -->
+      <div id="productGrid" class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="31900">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/02/CONDURA_WCONH024EE1.jpg" alt="Condura WCONH024EE1">
+          <h2 class="mt-4 text-xl font-bold">Condura WCONH024EE1</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 31,900.00</h3>
+          <p class="mt-2 text-black">2.5HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+  
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="7199">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2020/08/AHAM_AHAC5019MNT-1.jpg" alt="American Home AHAC5019MNT">
+          <h2 class="mt-4 text-xl font-bold">American Home AHAC5019MNT</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 7,199.00</h3>
+          <p class="mt-2 text-black">0.6HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+  
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="11598">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2022/01/FUJIDENZO_WAM75IG2.jpg" alt="Fujidenzo WAM75IG2">
+          <h2 class="mt-4 text-xl font-bold">Fujidenzo WAM75IG2</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 11,598.00</h3>
+          <p class="mt-2 text-black">0.75HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+  
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="14599">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2021/04/55294-1.png" alt="Panasonic CWMN820JPH">
+          <h2 class="mt-4 text-xl font-bold">Panasonic CWMN820JPH</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 14,599.00</h3>
+          <p class="mt-2 text-black">0.75HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+  
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="16106">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2020/12/MED07VQ-2.png" alt="Mabe MED07VQ">
+          <h2 class="mt-4 text-xl font-bold">Mabe MED07VQ</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 16,106.00</h3>
+          <p class="mt-2 text-black">0.8HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+  
+        <div class="product text-center bg-white p-6 shadow-md rounded-lg" data-price="20100">
+          <img class="mx-auto h-45 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2021/02/CARRIER_WCARJ008EE-1.jpg" alt="Carrier WCARJ008EE">
+          <h2 class="mt-4 text-xl font-bold">Carrier WCARJ008EE</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 20,100.00</h3>
+          <p class="mt-2 text-black">0.75HP Window Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inverter Type Aircon -->
+  <section class="py-20 mt-6 bg-green-500">
+    <div class="container mx-auto">
+      <h2 class="text-8xl font-bold text-center text-white">Inverter Type Aircon</h2>
+
+      <!-- Sort option -->
+      <div class="text-center mt-6 flex items-center justify-center space-x-3">
+        <label for="sortOptions1" class="text-lg font-semibold text-white">Sort by Price:</label>
+        <select id="sortOptions1" class="bg-white text-black font-bold py-2 px-6 rounded-md shadow-md hover:bg-gray-200 transition">
+          <option value="">Default</option>
+          <option value="low-to-high">Low to High</option>
+          <option value="high-to-low">High to Low</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="productGrid1" class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="47250">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/03/MIDEA_MSAI19CRFN8.jpg" alt="Midea MSAI19CRFN8">
+          <h2 class="mt-4 text-xl font-bold">Midea MSAI19CRFN8</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 47,250.00</h3>
+          <p class="mt-2 text-black">2.0HP Avigator Inverter Split Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="37900">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/03/MTSBI_SRK13YYPW7-420x389.jpg" alt="Mitsubishi SRK13YYPW7">
+          <h2 class="mt-4 text-xl font-bold">Mitsubishi SRK13YYPW7</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 37,900.00</h3>
+          <p class="mt-2 text-black">1.5HP Deluxe Inverter Split Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="47250">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/03/LG_HS24APX3-420x389.jpg" alt="LG HS24APX3">
+          <h2 class="mt-4 text-xl font-bold">LG HS24APX3</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 47,250.00</h3>
+          <p class="mt-2 text-black">2.0HP Avigator Inverter Split Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="58700">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/03/DAIKIN_FTKZ50WVM.jpg" alt="Daikin FTKZ50WVM">
+          <h2 class="mt-4 text-xl font-bold">Daikin FTKZ50WVM</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 58,700.00</h3>
+          <p class="mt-2 text-black">2.0HP D-Smart King Premium Inverter, Split Type Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="284400">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/03/KOLIN_KLGIF1004F3M410-420x389.jpg" alt="Kolin KLGIF1004F3M410">
+          <h2 class="mt-4 text-xl font-bold">Kolin KLGIF1004F3M410</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 284,400.00</h3>
+          <p class="mt-2 text-black">10.0HP/7.5TR Inverter, Floor Mounted Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+
+        <div class="product1 text-center bg-white p-6 shadow-md rounded-lg" data-price1="49700">
+          <img class="mx-auto h-48 w-full object-cover rounded-md" src="https://cdn-dkdbi.nitrocdn.com/jupGLetWziqcmHluZmAlSGkSfoThRGtQ/assets/images/optimized/rev-3937761/western.com.ph/wp-content/uploads/2025/02/HITACHI_RASRAC25HTK.jpg" alt="Hitachi RASRAC25HTK">
+          <h2 class="mt-4 text-xl font-bold">Hitachi RASRAC25HTK</h2>
+          <h3 class="mt-4 text-xl font-bold">Price: 49,700.00</h3>
+          <p class="mt-2 text-black">2.5HP Prime Inverter, Split Type Premium Air Conditioner</p>
+          <button class="buy-btn">Add to cart!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function sortProducts(selectId, gridId, productClass, priceAttribute) {
+        const sortDropdown = document.getElementById(selectId);
+        const productGrid = document.getElementById(gridId);
+  
+        sortDropdown.addEventListener("change", function () {
+          let products = Array.from(productGrid.getElementsByClassName(productClass));
+          let sortOrder = sortDropdown.value;
+  
+          products.sort((a, b) => {
+            let priceA = parseInt(a.getAttribute(priceAttribute), 10);
+            let priceB = parseInt(b.getAttribute(priceAttribute), 10);
+  
+            return sortOrder === "low-to-high" ? priceA - priceB : priceB - priceA;
+          });
+  
+          // Animation
+          productGrid.style.opacity = 0;
+  
+          setTimeout(() => {
+            productGrid.innerHTML = ""; // Clear the grid
+            products.forEach((product) => productGrid.appendChild(product)); // Add sorted product in array
+            productGrid.style.opacity = 1;
+          }, 300);
+        });
+      }
+  
+      // Initialize sorting for both sections
+      sortProducts("sortOptions", "productGrid", "product", "data-price");
+      sortProducts("sortOptions1", "productGrid1", "product1", "data-price1");
+    });
+  </script>
+  
+  <!-- Footer -->
+  <footer class="bg-white-500">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+        <p class="text-sm text-black"></p>
+        <ul class="flex space-x-4 text-sm text-black">
+            <li><p class="text-sm text-black">Made by: John Carlo Tulin</p></li>
+        </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

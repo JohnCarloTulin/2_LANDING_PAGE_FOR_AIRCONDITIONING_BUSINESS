@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirCold</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="bg-green-500 shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="index.html" class="logo">AirCold</a>
+            <ul class="flex space-x-10 text-black">
+                <li><a href="index.html" class="navigation-link">Home</a></li>
+                <li><a href="store.html" class="navigation-link">Store</a></li>
+                <li><a href="contact.html" class="navigation-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto my-10 p-6 bg-gray-100 rounded-lg shadow-md max-w-lg text-center">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Get in Touch</h2>
+        <p class="text-gray-700 mb-6">
+            Looking for the perfect air conditioner? Need help with installation or repairs? Fill out the form below, and our team will assist you as soon as possible.
+        </p>
+        <form action="#" method="POST">
+            <div class="mb-4 text-left">
+                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input type="text" id="name" name="name" required class="w-full p-2 border rounded-md">
+            </div>
+            <div class="mb-4 text-left">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded-md">
+            </div>
+            <div class="mb-4 text-left">
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required class="w-full p-2 border rounded-md">
+            </div>
+            <div class="mb-4 text-left">
+                <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                <select id="service" name="service" required class="w-full p-2 border rounded-md">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="purchase">Purchase a new air conditioner</option>
+                    <option value="installation">Installation service</option>
+                    <option value="repair">Repair and maintenance</option>
+                    <option value="consultation">Consultation and recommendations</option>
+                </select>
+            </div>
+            <div class="mb-4 text-left">
+                <label for="ac_type" class="block text-sm font-medium text-gray-700">Type of Air Conditioner</label>
+                <select id="ac_type" name="ac_type" required class="w-full p-2 border rounded-md">
+                    <option value="" disabled selected>Select AC type</option>
+                    <option value="split">Inverter Type</option>
+                    <option value="window">Window Type</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-4 text-left">
+                <label for="budget" class="block text-sm font-medium text-gray-700">Estimated Budget</label>
+                <input type="text" id="budget" name="budget" required class="w-full p-2 border rounded-md">
+            </div>
+            <div class="mb-4 text-left">
+                <label for="message" class="block text-sm font-medium text-gray-700">Additional Details</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded-md" placeholder="Tell us more about your request..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-green-500 text-white p-2 rounded-md hover:bg-green-600">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-500 text-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+            <p class="text-sm"></p>
+            <ul class="flex space-x-4 text-sm">
+                <li><p class="text-sm">Made by: John Carlo Tulin</p></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
